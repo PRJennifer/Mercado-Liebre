@@ -1,0 +1,302 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+h3{
+    font-size: 24px;
+    color: #666
+}
+p{
+    font-size: 12px;
+}
+
+/*diseño para el Header*/
+header{
+    background-color: #EAC926;
+}
+div.top-header{
+    padding: 5%;
+}
+header div.logo{
+    width: 50%;
+    padding: 10px;
+}
+header nav{
+    font-size: 12px;
+}
+header ul li{
+    list-style-type: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+header .conte-P{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:10px ;
+}
+/*Menu hamburguesa estilos*/
+div.burger-menu{
+    text-align: center;
+}
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+section.banner img{
+    width: 100%;
+}
+/*fin de estilos*/
+
+
+
+/*Diseño del formulario*/
+.formulario{
+    margin:20px;
+}
+.primerBlock{
+    display: flex;
+    flex-direction: column; 
+}
+.primerBlock input{
+    width: 100%;
+    border: none;
+}
+.formulario div{
+    margin-bottom: 20px;
+}
+.formulario input{
+    padding:10px 40px 10px 10px;
+    border-radius: 8px;
+}
+.intereses{
+    display: flex;
+    flex-direction: column;
+}
+.intereses label{
+    margin-bottom: 10px;
+}
+.perfilUsuario label {
+    margin-right:10px ;
+}
+.foto #foto{
+    padding-left:5px;
+}
+.foto h4{
+    padding-bottom: 10px;
+}
+.foto{
+    margin-left:5px;
+}
+.contrasena input{
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.fecha input{
+    width: 100%;
+    border: none;
+}
+form .botones{
+    display: flex;
+    justify-content: center;
+}
+form .botones button{
+    width: 40%;
+    margin-right: 10px;
+    padding: 10px 0px 10px 0px ;
+    background-color: #1259C3;
+    color: white;
+    border-radius: 8px;
+    border: none;
+
+}
+
+
+/*diseño footer*/
+footer{
+    margin: 15px 5px 5px 5px;
+    background-color: white;
+    padding-top:30px;
+}
+footer p{
+    margin:0 38px 25px 38px;
+    padding:0px;
+    text-align: center;
+    color:#666;
+}
+footer  h4{
+    margin:0px;
+    padding:0px;
+    text-align: center;
+    color: #666;
+}
+footer .copi{
+    margin:0px 0px 0px 20px;
+    padding:0px 0px 20px 0px;
+    text-align:left;
+}
+footer #ico{
+    color: #1259C3;
+    border-radius:3px;
+    margin:10px 10px 10px 5px;
+    text-align: center;
+}
+footer .conte-Elemnto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+/*Estilos de mobil */
+@media (max-width:690px) {
+    header nav{
+        display: none;
+    }
+    .description{
+        display: none;
+    }
+    header .top-header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    header .top-header .logo{
+        width: 50%;
+    }
+    header .top-header .form{
+        width: 50%;
+    }
+    .top-header div .input{
+        height:8vh;
+        padding:8px 5px;
+        border-radius: 8px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .top-header .form .submit{
+        border: none;
+    }
+    form input{
+        width: 40%;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-right: 5px;
+        padding-left: 5px;
+        border-radius: 8px;
+        border: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column; 
+    }
+    .padre-Footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+}
+    .form .intereses input{
+        width:30%;
+}
+}
+
+@media (min-width:691px){
+    header  .burger-menu{
+        display: none;
+    }
+    header .top-header{
+        display: flex;
+        align-items: center;
+    }
+    header .logo img{
+        width: 30vw;
+    }
+    .top-header div  .input{
+        width:25vw;
+        padding:15px 5px;
+        border-radius: 8px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    header .top-header .form .submit{
+        border: none;
+    }
+    .form{
+        display: flex;
+    }
+    header nav{
+        padding-bottom:20px;
+        }
+    nav{
+    display: flex;
+    justify-content: space-around;
+    }
+    nav .lista1 ul{
+        display: flex;
+    }
+    nav .lista2 ul{
+        display: flex;
+    }
+    .lista1 ul li{
+        padding-right: 10px;
+    }
+    .lista2 ul li{
+        padding-right: 10px;
+    }
+    
+    footer {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        
+    }
+        .padre-Footer{
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            align-items: center;
+    }
+        .padre-Footer .conte-Elemnto{
+            width: 50%;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+    }
+}
